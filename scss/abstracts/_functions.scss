@@ -1,0 +1,15 @@
+// simplify weights map-set
+
+@function weight($weight-name){
+    @return map-get($font-weights,$weight-name);
+}
+
+//Themes light/dark set-color
+
+@function set-text-color($color) {
+    @if(lightness($color) > 40%) {
+        @return #000000;
+    }@else {
+        @return #ffffff;
+    }
+}
