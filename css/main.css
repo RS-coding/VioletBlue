@@ -1,5 +1,35 @@
+/* @mixin media-md{
+    @media screen and(min-width:768px){
+        @content;
+    }
+}
+
+@mixin media-lg{
+    @media screen and(min-width:1024px){
+        @content;
+    }
+}
+
+@mixin media-xl{
+    @media screen and(min-width:1281px){
+        @content;
+    }
+}
+ */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+}
+
+.header a img {
+  width: 100%;
 }
