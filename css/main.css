@@ -39,7 +39,9 @@ h5 {
   letter-spacing: .7rem; }
 
 p {
-  font-family: "Open Sans",sans-serif; }
+  font-family: "Open Sans",sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: .2rem; }
 
 .header {
   width: 100%;
@@ -171,6 +173,7 @@ p {
 .card {
   position: absolute;
   background-color: #ffffff;
+  color: #333333;
   color: #5e51a9;
   top: 5rem;
   padding: 2rem 3.2rem;
@@ -189,3 +192,38 @@ p {
     color: #333333; }
     .card__paragraph a {
       text-decoration-line: underline; }
+
+.section-2 {
+  background-color: #ffffff;
+  color: #333333;
+  display: flex;
+  flex-direction: column; }
+  .section-2__title-container {
+    padding: 8rem 2rem 0rem 2rem; }
+  .section-2__title {
+    color: #5e51a9;
+    font-size: 2.8rem;
+    line-height: 3rem; }
+  .section-2__p-container {
+    padding: 4rem 2rem 5rem 6rem; }
+  .section-2__p {
+    color: rgba(51, 51, 51, 0.5); }
+
+.section-3 {
+  background-color: #5e51a9;
+  color: #333333;
+  color: #ffffff;
+  padding: 5rem; }
+  .section-3 h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .4rem; }
+    .section-3 h5::after {
+      content: "";
+      position: absolute;
+      transform: translate(-225px, 65px);
+      width: 8rem;
+      height: .7rem;
+      background-color: #9c94cc; }
+  .section-3 p {
+    padding: 7rem 0 0 0; }

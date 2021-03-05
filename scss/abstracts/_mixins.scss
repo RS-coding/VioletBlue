@@ -8,7 +8,7 @@
 }
 
 
-//background-color ansset-text-color together
+//background-color and set-text-color together
 @mixin set-background($color){
     background-color:$color;
     color:set-text-color($color);

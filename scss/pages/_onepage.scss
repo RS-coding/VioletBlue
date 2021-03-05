@@ -24,13 +24,11 @@
         width:80%;
         top:-12rem;
     }
-
-
 }
 
 .card{
     position:absolute;
-    background-color:$white-color;
+    @include set-background($white-color);
     color:$primary-color;
     top:5rem;
     padding:2rem 3.2rem;
@@ -58,5 +56,58 @@
         a{
             text-decoration-line:underline;
         }
+    }
+}
+
+.section-2{
+    @include set-background($white-color);
+    display:flex;
+    flex-direction: column;
+
+    &__title-container{
+        padding:8rem 2rem 0rem 2rem;
+    }
+
+    &__title{
+        color:$primary-color;
+        font-size:2.8rem;
+        line-height: 3rem;
+    }
+
+    &__p-container{
+        padding: 4rem 2rem 5rem 6rem;
+        
+    }   
+
+    &__p{
+        color:rgba($grey-color,.5);
+    }
+}
+
+.section-3{
+    @include set-background($primary-color);
+    color:$white-color;
+    padding:5rem;
+
+    h5{
+       
+        font-size:1.5rem;
+        font-weight:400;
+        letter-spacing:.4rem;
+
+        &::after{
+            content:"";
+            position:absolute;
+            transform:translate(-225px , 65px);
+            width:8rem;
+            height:.7rem;
+            background-color:lighten($primary-color,20%);
+        }
+
+
+    }
+
+    p{
+        padding:7rem 0 0 0;
     }
 }
