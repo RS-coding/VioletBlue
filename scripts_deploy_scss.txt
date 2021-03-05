@@ -1,0 +1,15 @@
+   deploy project in the end:
+   
+    1-"compile:sass":"node-sass scss/main.scss css/main.comp.css",
+    2-npm install concat --save-dev
+    3-"concat:css":"concat -o css/main.concat.css css/main.comp.css",
+    4-npm run concat:css
+    5-npm install autoprefixer --save-dev
+    6-npm install postcss-cli --save-dev
+    7-"prefix:css":"postcss --use autoprefixer -b 'last 10 versions' main.concat.css -0 css/main.prefix.css",
+    8-npm run prefix:css
+    9-"compress:css":"node-sass css/main.prefix.css css/main.min.css --output-style compressed"
+    10-npm run compress:css
+    11-npm install npm-run-all --save-dev
+    12-"build:css":"npm-run-all compile:scss concat:css prefix:css compress:css"
+    13-npm run build:css
