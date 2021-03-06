@@ -6,19 +6,49 @@ h1{
 
 
 h2{
-    font-size:3.2rem;
+    /* font-size:3.2rem; */
     font-family:"Merriweather",serif;
 }
 
 h5{
-    font-size:1rem;
+    
     font-family: "Roboto",sans-serif;
     text-transform: uppercase;
-    letter-spacing: .7rem;
+    letter-spacing: .5rem;
 }
 
 p{
     font-family:"Open Sans",sans-serif;
-    font-size:1.2rem;
-    letter-spacing:.2rem;
+    letter-spacing:.1rem;
+    line-height:2rem;
 }
+
+.title-styled {
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .4rem;
+    position:relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left:0;
+        top:65px;
+        width: 8rem;
+        height: .7rem;
+        background-color: lighten($primary-color, 20%);
+    }
+
+}
+
+ .italic-legend {
+     padding: .4rem 0;
+     font-size: 1rem;
+     font-style: italic;
+     color: $grey-color;
+
+     a {
+         text-decoration-line: underline;
+     }
+ }

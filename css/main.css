@@ -29,19 +29,40 @@ h1 {
   font-family: "Merriweather", serif; }
 
 h2 {
-  font-size: 3.2rem;
+  /* font-size:3.2rem; */
   font-family: "Merriweather",serif; }
 
 h5 {
-  font-size: 1rem;
   font-family: "Roboto",sans-serif;
   text-transform: uppercase;
-  letter-spacing: .7rem; }
+  letter-spacing: .5rem; }
 
 p {
   font-family: "Open Sans",sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: .2rem; }
+  letter-spacing: .1rem;
+  line-height: 2rem; }
+
+.title-styled {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: .4rem;
+  position: relative; }
+  .title-styled::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 65px;
+    width: 8rem;
+    height: .7rem;
+    background-color: #9c94cc; }
+
+.italic-legend {
+  padding: .4rem 0;
+  font-size: 1rem;
+  font-style: italic;
+  color: #333333; }
+  .italic-legend a {
+    text-decoration-line: underline; }
 
 .header {
   width: 100%;
@@ -152,10 +173,7 @@ p {
 .about-us {
   width: 100%;
   padding-top: 10rem;
-  height: 100vh;
-  /*   display:flex;
-    flex-direction:column;
-    justify-content: flex-end; */ }
+  height: 100vh; }
   .about-us__bg-violet {
     background-color: #5e51a9;
     width: 100%;
@@ -179,19 +197,14 @@ p {
   padding: 2rem 3.2rem;
   text-align: center; }
   .card__subtitle {
+    font-size: 1rem;
     margin: 2rem 0 1.5rem 0; }
   .card__title {
     text-align: inherit;
-    line-height: 3.5rem; }
+    line-height: 3.5rem;
+    font-size: 3.2rem; }
     .card__title span {
       display: block; }
-  .card__paragraph {
-    padding: .4rem 0;
-    font-size: 1rem;
-    font-style: italic;
-    color: #333333; }
-    .card__paragraph a {
-      text-decoration-line: underline; }
 
 .section-2 {
   background-color: #ffffff;
@@ -207,23 +220,36 @@ p {
   .section-2__p-container {
     padding: 4rem 2rem 5rem 6rem; }
   .section-2__p {
-    color: rgba(51, 51, 51, 0.5); }
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 1.4rem; }
 
-.section-3 {
+.section-3__bg-violet-content {
   background-color: #5e51a9;
   color: #333333;
   color: #ffffff;
   padding: 5rem; }
-  .section-3 h5 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: .4rem; }
-    .section-3 h5::after {
-      content: "";
-      position: absolute;
-      transform: translate(-225px, 65px);
-      width: 8rem;
-      height: .7rem;
-      background-color: #9c94cc; }
-  .section-3 p {
-    padding: 7rem 0 0 0; }
+  .section-3__bg-violet-content p {
+    padding: 5rem 0 0 0;
+    font-size: 1.2rem; }
+
+.section-3__img-container {
+  padding: 4rem; }
+  .section-3__img-container img {
+    width: 100%; }
+
+.section-3__title {
+  padding: 2.5rem 3rem;
+  color: #5e51a9; }
+  .section-3__title h2 {
+    font-size: 1.9rem; }
+
+.section-3__img2-container img {
+  width: 100%; }
+
+.section-3__content {
+  padding: 2rem 1rem; }
+  .section-3__content h5 {
+    color: #5e51a9; }
+  .section-3__content p {
+    padding-top: 5rem;
+    font-size: 1.5rem; }

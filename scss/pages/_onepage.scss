@@ -3,10 +3,6 @@
     padding-top:10rem;
     height:100vh;
 
-  /*   display:flex;
-    flex-direction:column;
-    justify-content: flex-end; */
-   
 
     &__bg-violet{
         background-color:$primary-color;
@@ -35,28 +31,20 @@
     text-align:center;
 
     &__subtitle{
+        font-size:1rem;
         margin:2rem 0 1.5rem 0;
        
     }
     &__title{
         text-align:inherit;
         line-height: 3.5rem;
+        font-size:3.2rem;
        
         span{
           display:block;  
         }
     }
 
-    &__paragraph{
-        padding:.4rem 0;
-        font-size:1rem;
-        font-style: italic;
-        color:$grey-color;
-        
-        a{
-            text-decoration-line:underline;
-        }
-    }
 }
 
 .section-2{
@@ -81,33 +69,61 @@
 
     &__p{
         color:rgba($grey-color,.5);
+        font-size:1.4rem;
     }
 }
 
 .section-3{
-    @include set-background($primary-color);
-    color:$white-color;
-    padding:5rem;
+    
 
-    h5{
-       
-        font-size:1.5rem;
-        font-weight:400;
-        letter-spacing:.4rem;
+    &__bg-violet-content{
+        @include set-background($primary-color);
+        color:$white-color;
+        padding:5rem;
 
-        &::after{
-            content:"";
-            position:absolute;
-            transform:translate(-225px , 65px);
-            width:8rem;
-            height:.7rem;
-            background-color:lighten($primary-color,20%);
+         p {
+             padding: 5rem 0 0 0;
+             font-size:1.2rem;
+         }
+    }
+
+    &__img-container{
+        padding:4rem;
+
+        img{
+            width:100%;
         }
-
-
     }
 
-    p{
-        padding:7rem 0 0 0;
+    &__title{
+       
+        padding:2.5rem 3rem ;
+        color:$primary-color;
+        
+        h2{
+            font-size:1.9rem;
+        }
     }
+
+    &__img2-container{
+
+        img{
+            width:100%;
+        }
+        
+    }
+
+    &__content{
+        padding: 2rem 1rem;
+
+        h5{
+            color:$primary-color;
+        }
+        p{
+            padding-top:5rem;
+            font-size:1.5rem;
+        }
+    }
+
+   
 }
