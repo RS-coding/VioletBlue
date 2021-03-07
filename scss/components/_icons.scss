@@ -1,0 +1,16 @@
+.social-icons{
+    width:50%;
+    list-style-type: none;
+    display:flex;
+    justify-content:space-between;
+
+    &__item  a .fab{
+        color:$white-color;
+        font-size:1.8rem;
+        @include transition-ease;
+
+        &:hover{
+            color:$primary-color;
+        }
+    }
+}

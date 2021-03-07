@@ -29,7 +29,6 @@ h1 {
   font-family: "Merriweather", serif; }
 
 h2 {
-  /* font-size:3.2rem; */
   font-family: "Merriweather",serif; }
 
 h5 {
@@ -37,10 +36,13 @@ h5 {
   text-transform: uppercase;
   letter-spacing: .5rem; }
 
+h6 {
+  font-family: "Open Sans", sans-serif; }
+
 p {
   font-family: "Open Sans",sans-serif;
   letter-spacing: .1rem;
-  line-height: 2rem; }
+  line-height: 2.2rem; }
 
 .title-styled {
   font-size: 1.5rem;
@@ -63,6 +65,53 @@ p {
   color: #333333; }
   .italic-legend a {
     text-decoration-line: underline; }
+
+.btn {
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out; }
+  .btn__primary {
+    background-color: #ffffff;
+    color: #e499bf; }
+  .btn-small {
+    padding: 1rem; }
+  .btn-medium {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .1rem; }
+  .btn-large {
+    padding: 1rem 5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .1rem; }
+  .btn__secondary {
+    background-color: #e499bf;
+    color: #ffffff; }
+  .btn:hover {
+    background-color: #5e51a9;
+    color: #333333;
+    color: #ffffff; }
+
+.circle {
+  padding: 1rem;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #5e51a9; }
+
+.social-icons {
+  width: 50%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between; }
+  .social-icons__item a .fab {
+    color: #ffffff;
+    font-size: 1.8rem;
+    transition: all 0.5s ease-in-out; }
+    .social-icons__item a .fab:hover {
+      color: #5e51a9; }
 
 .header {
   width: 100%;
@@ -253,3 +302,168 @@ p {
   .section-3__content p {
     padding-top: 5rem;
     font-size: 1.5rem; }
+
+.section-4 {
+  padding: 4rem;
+  position: relative; }
+  .section-4__container-img {
+    margin: 1rem;
+    position: relative; }
+    .section-4__container-img .circle {
+      position: absolute;
+      z-index: -1;
+      top: -4rem; }
+    .section-4__container-img .img {
+      width: 100%;
+      border-radius: 50%;
+      z-index: 1; }
+    .section-4__container-img .shape {
+      position: absolute;
+      bottom: 2rem;
+      width: 10rem; }
+      .section-4__container-img .shape-wave {
+        width: 100%; }
+  .section-4__content {
+    background-color: #e499bf;
+    color: #ffffff;
+    margin-top: 3rem;
+    max-width: 450px;
+    padding: 5rem 2rem;
+    position: relative; }
+    .section-4__content h2 {
+      font-size: 3rem; }
+    .section-4__content p {
+      padding-top: 2rem;
+      font-size: 1.5rem; }
+    .section-4__content .italic-legend {
+      color: #ffffff; }
+      .section-4__content .italic-legend a {
+        color: inherit; }
+    .section-4__content button {
+      margin-top: 4rem; }
+
+.articles {
+  overflow: hidden; }
+  .articles__image-container-1 {
+    display: flex;
+    justify-self: center;
+    align-items: center; }
+    .articles__image-container-1 img {
+      max-width: 100%;
+      height: auto; }
+  .articles__text-container-1 {
+    padding: 2rem 5rem;
+    background-color: #e499bf;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700; }
+    .articles__text-container-1 .legend {
+      padding: 2rem 0;
+      font-size: 1.3rem;
+      text-transform: uppercase; }
+      .articles__text-container-1 .legend a {
+        color: inherit;
+        text-decoration: underline; }
+  .articles__image-container-2 {
+    display: flex;
+    justify-self: center;
+    align-items: center; }
+    .articles__image-container-2 img {
+      max-width: 100%;
+      height: auto; }
+  .articles__text-container-2 {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4rem 6rem; }
+    .articles__text-container-2 h5 {
+      font-size: 1.4rem;
+      font-weight: 400; }
+    .articles__text-container-2 h1 {
+      letter-spacing: .2rem;
+      font-weight: 400;
+      font-size: 3.7rem;
+      padding: 2rem 0; }
+    .articles__text-container-2 .fas.fa-arrow-right {
+      color: #ffffff;
+      font-size: 3.5rem;
+      position: relative; }
+  .articles__image-container-3 {
+    display: flex;
+    justify-self: center;
+    align-items: center; }
+    .articles__image-container-3 img {
+      max-width: 100%;
+      flex-shrink: 0; }
+
+.blog {
+  padding: 4rem 2rem; }
+  .blog__col-1 {
+    margin: 2rem 1rem; }
+    .blog__col-1 h5 {
+      font-size: 1.5rem;
+      font-weight: 400; }
+    .blog__col-1 h2 {
+      padding: 1.5rem 0;
+      font-size: 2.5rem;
+      color: #5e51a9; }
+  .blog__col-2 {
+    margin: 2rem 1rem; }
+    .blog__col-2 p {
+      font-size: 1.2rem; }
+  .blog__col-3 {
+    margin: 2rem 1rem; }
+    .blog__col-3 p {
+      font-size: 1.2rem; }
+    .blog__col-3 .btn {
+      margin-top: 5rem; }
+
+.contact {
+  display: grid;
+  grid-template-columns: 2rem 4fr 2rem;
+  grid-template-rows: 4rem repeat(2, 1fr) 4rem; }
+  .contact__bg-pink {
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+    background-color: #e499bf; }
+  .contact__col-1 {
+    background-color: #ffffff;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 2rem; }
+    .contact__col-1 h2 {
+      margin-top: 5rem;
+      font-size: 2.5rem; }
+    .contact__col-1 .social-black {
+      width: 33%;
+      margin: 2.2rem 0 1.5rem 0; }
+      .contact__col-1 .social-black__item a .fab {
+        color: #000000;
+        font-size: 2rem;
+        transition: all 0.5s ease-in-out; }
+        .contact__col-1 .social-black__item a .fab:hover {
+          color: #e499bf; }
+    .contact__col-1 .spacer {
+      width: 100%;
+      height: 1.5rem;
+      background-color: #e499bf; }
+    .contact__col-1 h6 {
+      margin-top: 6rem;
+      font-size: 2.6rem;
+      letter-spacing: .1rem; }
+    .contact__col-1 .italic-legend {
+      margin-top: 1.4rem;
+      font-size: 1.2rem; }
+  .contact__col-2 {
+    background-color: #ffffff;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    padding: 2rem; }
+    .contact__col-2 img {
+      max-width: 100%; }
+    .contact__col-2 p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      text-align: center; }
+
+.gallery {
+  background-color: red; }
