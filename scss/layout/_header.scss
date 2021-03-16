@@ -3,8 +3,19 @@
     position:fixed;
     top:0;
     padding:1rem;
-    z-index:2; 
+    z-index:999999999; 
     background-color:$white-color;
+
+    @include respond(tab-land){
+        padding: 2rem 6rem;
+    }
+
+    @include respond(desktop){
+        display:flex;
+        align-items:center;
+         z-index:999999999;
+        
+    }
 }
 
 

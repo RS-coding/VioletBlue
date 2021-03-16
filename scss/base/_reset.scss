@@ -1,9 +1,23 @@
-*{
+*,
+*::before,
+*::after{
     box-sizing:border-box;
     margin:0;
     padding:0;
 }
+html{
+   font-size:100%;
+}
+
+body{
+    box-sizing:inherit;
+    
+}
 
 a{
     text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
 }

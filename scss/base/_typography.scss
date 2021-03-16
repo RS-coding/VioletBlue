@@ -1,12 +1,22 @@
-h1{
-    font-size:3.75rem;
+
+body{
+    font-family: "Open Sans",sans-serif;
+    font-weight:weight(regular);
+    color:$grey-color;
+  
+}
+
+h1,h2{
+    
     font-family:"Merriweather",
     serif;
 }
 
-
-h2{
-    font-family:"Merriweather",serif;
+h3{
+    font-family: "Roboto",
+    sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
 }
 
 h5{
@@ -24,7 +34,9 @@ h6{
 p{
     font-family:"Open Sans",sans-serif;
     letter-spacing:.1rem;
-    line-height:2.2rem;
+      line-height:2.2rem;
+    
+    
 }
 
 .title-styled {
@@ -42,6 +54,11 @@ p{
         width: 8rem;
         height: .7rem;
         background-color: lighten($primary-color, 20%);
+        
+        @include respond(tab-port){
+            top:55px;
+        }
+    
     }
 
 }
@@ -55,4 +72,12 @@ p{
      a {
          text-decoration-line: underline;
      }
+
+     @include respond(tab-port){
+           padding:0;
+      }
+
+        @include respond(big-desktop) {
+            font-size: 1.6rem;
+        }
  }

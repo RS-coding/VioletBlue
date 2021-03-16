@@ -3,6 +3,10 @@
     list-style-type: none;
     display:flex;
     justify-content:space-between;
+    
+    @include respond(tab-port){
+        width:35%;
+    }
 
     &__item  a .fab{
         color:$white-color;
