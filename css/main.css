@@ -188,7 +188,8 @@ p {
         grid-column: 3 /4;
         grid-row: 1/2;
         justify-self: flex-end;
-        padding: 0; } }
+        padding: 0;
+        margin: 0; } }
     .footer-top .icons-colored__items {
       padding: 0 .4rem; }
       @media only screen and (min-width: 37.5em) {
